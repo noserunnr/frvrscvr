@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FRVRSCVR — We Bleed The Truth</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700;900&display=swap" rel="stylesheet">
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Montserrat', sans-serif;
+      background: #000;
+      color: #fff;
+      scroll-behavior: smooth;
+    }
+    nav {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      padding: 20px;
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      background: rgba(0,0,0,0.85);
+      backdrop-filter: blur(6px);
+      z-index: 10;
+    }
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: 500;
+      letter-spacing: 1px;
+      transition: color 0.3s;
+    }
+    nav a:hover { color: #e10600; }
+
+    header {
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 0 20px;
+    }
+    header img {
+      max-width: 420px;
+      width: 90%;
+      margin-bottom: 30px;
+      filter: drop-shadow(0 0 25px rgba(225,6,0,0.15));
+      animation: fadeIn 2s ease;
+    }
+    header p {
+      color: #e10600;
+      letter-spacing: 4px;
+      font-weight: 700;
+      animation: fadeIn 3s ease;
+    }
+
+    section {
+      padding: 120px 10%;
+    }
+    h2 {
+      font-size: 2.2rem;
+      margin-bottom: 40px;
+      letter-spacing: 3px;
+    }
+
+    .about {
+      max-width: 800px;
+      line-height: 1.9;
+      font-weight: 300;
+      font-size: 1.1rem;
+    }
+
+    .shop {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 50px;
+    }
+    .product {
+      border: 1px solid #222;
+      padding: 25px;
+      text-align: center;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .product:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 0 40px rgba(225,6,0,0.15);
+    }
+    .product img {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+    .product h3 {
+      letter-spacing: 2px;
+      margin-bottom: 10px;
+    }
+    .price {
+      color: #e10600;
+      font-weight: 700;
+      margin-bottom: 15px;
+    }
+    .badge {
+      font-size: 0.75rem;
+      letter-spacing: 2px;
+      color: #777;
+      margin-bottom: 20px;
+    }
+    .buttons a {
+      display: inline-block;
+      margin: 8px;
+      padding: 12px 28px;
+      border: 1px solid #e10600;
+      color: #e10600;
+      text-decoration: none;
+      font-weight: 600;
+      letter-spacing: 2px;
+      transition: background 0.3s, color 0.3s;
+    }
+    .buttons a:hover {
+      background: #e10600;
+      color: #000;
+    }
+
+    footer {
+      border-top: 1px solid #222;
+      padding: 50px 20px;
+      text-align: center;
+      font-size: 0.9rem;
+    }
+    footer a { color: #e10600; text-decoration: none; }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <a href="#home">HOME</a>
+  <a href="#about">ABOUT</a>
+  <a href="#shop">DROP 001</a>
+  <a href="#contact">CONTACT</a>
+</nav>
+
+<header id="home">
+  <img src="logo.png" alt="FRVRSCVR Logo">
+  <p>WE BLEED THE TRUTH</p>
+</header>
+
+<section id="about">
+  <h2>ABOUT</h2>
+  <p class="about">
+    FRVRSCVR exists for those who move in truth and bleed authenticity. Built from darkness,
+    resistance, and raw expression — this is not fashion for everyone. This is identity.
+  </p>
+</section>
+
+<section id="shop">
+  <h2>DROP 001</h2>
+  <div class="shop">
+
+    <div class="product">
+      <img src="product1-front.jpg" alt="Disaster Exclusive Tee Front">
+      <h3>DISASTER EXCLUSIVE TEE</h3>
+      <div class="badge">LIMITED DROP</div>
+      <div class="price">R750</div>
+      <div class="buttons">
+        <a href="https://instagram.com/bloodynose.files" target="_blank">ORDER VIA IG</a>
+        <a href="https://wa.me/27658930336" target="_blank">ORDER VIA WHATSAPP</a>
+      </div>
+    </div>
+
+    <div class="product">
+      <img src="product2.jpg" alt="BN2 NOSERUNNR Tee">
+      <h3>BN2 NOSERUNNR TEE</h3>
+      <div class="badge">LIMITED DROP</div>
+      <div class="price">R500</div>
+      <div class="buttons">
+        <a href="https://instagram.com/bloodynose.files" target="_blank">ORDER VIA IG</a>
+        <a href="https://wa.me/27658930336" target="_blank">ORDER VIA WHATSAPP</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section id="contact">
+  <h2>CONTACT</h2>
+  <p>Instagram: <a href="https://instagram.com/bloodynose.files" target="_blank">@bloodynose.files</a></p>
+  <p>WhatsApp: 065 893 0336</p>
+</section>
+
+<footer>
+  <p>© 2026 FRVRSCVR — <span style="color:#e10600">WE BLEED THE TRUTH</span></p>
+</footer>
+
+</body>
+</html>
